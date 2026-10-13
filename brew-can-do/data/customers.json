@@ -1,0 +1,5 @@
+[
+{"id":1,"name":"Alex Sample","customerType":"School Organization","inquiryCategory":"School Event"},
+{"id":2,"name":"Jamie Demo","customerType":"Private Customer","inquiryCategory":"Birthday Celebration"},
+{"id":3,"name":"Taylor Example","customerType":"Corporate Client","inquiryCategory":"Office Gathering"}
+]
