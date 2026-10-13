@@ -2,8 +2,8 @@
 
 A fictional coffee catering business website, created as a final project for Web Publishing and Digital Advertising. The business, prices, customers and contact details are all fictional sample data.
 
-**Live website:** (add your link here)
-**Repository:** (add your GitHub link here)
+**Live website:** https://gabsoqttt.github.io/brew-can-do-webpub-/index.html
+**Repository:** https://github.com/gabsoqttt/brew-can-do-webpub-
 
 ## Pages
 - Home, Features, Services, About Us, Contact Us
