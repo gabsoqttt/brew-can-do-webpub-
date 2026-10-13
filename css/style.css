@@ -1,0 +1,346 @@
+:root {
+  --b: #55291f;
+  --e: #713d2d;
+  --c: #f4ebdd;
+  --w: #e6d5b8;
+  --ca: #c68b52;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font:
+    16px/1.6 Poppins,
+    Arial,
+    sans-serif;
+  background: var(--c);
+  color: var(--e);
+}
+h1,
+h2,
+h3 {
+  font-family: "Bowlby One SC", Impact, sans-serif;
+  color: var(--b);
+  line-height: 1.15;
+  font-weight: 400;
+  margin: 0.3em 0;
+}
+h1 {
+  font-size: clamp(2.2rem, 6vw, 4rem);
+}
+h2 {
+  font-size: clamp(1.5rem, 4vw, 2.3rem);
+}
+h3 {
+  font-size: 1.2rem;
+}
+.kicker {
+  font-family: Oswald, Impact, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--e);
+  font-size: 1.1rem;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 9;
+  background: var(--c);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 5%;
+  box-shadow: 0 2px 8px #55291f33;
+}
+.logo {
+  font:
+    1.4rem "Bowlby One SC",
+    Impact,
+    sans-serif;
+  color: var(--b);
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+nav a:not(.btn) {
+  color: var(--b);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.2rem 0;
+}
+nav a[aria-current] {
+  border-bottom: 3px solid var(--ca);
+}
+#burger {
+  display: none;
+  background: none;
+  border: 2px solid var(--b);
+  color: var(--b);
+  font-size: 1.4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn {
+  display: inline-block;
+  background: var(--b);
+  color: #fff !important;
+  padding: 0.7rem 1.4rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  font:
+    600 1rem Poppins,
+    sans-serif;
+  border: 2px solid var(--b);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn:hover {
+  background: var(--e);
+  transform: translateY(-2px);
+}
+.btn.alt {
+  background: transparent;
+  color: var(--b) !important;
+}
+:focus-visible {
+  outline: 3px solid var(--ca);
+  outline-offset: 2px;
+}
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+main > section:last-child {
+  flex: 1;
+}
+section {
+  padding: 3.5rem 5%;
+}
+.wrap {
+  max-width: 1100px;
+  margin: auto;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  background: var(--w);
+  border-radius: 1.2rem;
+  padding: 1.2rem;
+  box-shadow: 0 4px 12px #55291f22;
+  transition: 0.2s;
+}
+.card:hover {
+  transform: translateY(-4px);
+}
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+.ph {
+  aspect-ratio: 4/3;
+  border-radius: 1rem;
+  background: radial-gradient(circle at 30% 30%, var(--ca), var(--e));
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+}
+.ph b {
+  font-size: 3rem;
+  display: block;
+  font-weight: 400;
+}
+.alt-bg {
+  background: var(--w);
+}
+.alt-bg .card {
+  background: var(--c);
+}
+.band {
+  background: var(--b);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.band h2 {
+  color: #fff;
+}
+.band .btn {
+  background: var(--ca);
+  border-color: var(--ca);
+  color: var(--b) !important;
+}
+.note {
+  font-size: 0.85rem;
+  font-style: italic;
+}
+.price {
+  font:
+    1.4rem "Bowlby One SC",
+    Impact,
+    sans-serif;
+  color: var(--b);
+}
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+.tools button {
+  background: var(--w);
+  border: 2px solid var(--b);
+  color: var(--b);
+  border-radius: 2rem;
+  padding: 0.4rem 1rem;
+  font: 600 0.9rem Poppins;
+  cursor: pointer;
+}
+.tools button[aria-pressed="true"] {
+  background: var(--b);
+  color: #fff;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 2px solid var(--e);
+  border-radius: 0.6rem;
+  font: inherit;
+  background: #fff;
+  color: var(--b);
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin: 0.8rem 0 0.2rem;
+  color: var(--b);
+}
+.err {
+  color: #9b1c1c;
+  font-size: 0.85rem;
+  min-height: 1.2em;
+}
+.msg {
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin-top: 1rem;
+}
+.msg.ok {
+  background: #e3f1df;
+  color: #1f4d1a;
+}
+.msg.bad {
+  background: #f8dcdc;
+  color: #7a1515;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+th,
+td {
+  padding: 0.7rem;
+  border-bottom: 1px solid var(--w);
+  text-align: left;
+}
+th {
+  background: var(--b);
+  color: #fff;
+}
+.post {
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  background: var(--c);
+  border: 3px solid var(--b);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+}
+.post.dark {
+  background: var(--b);
+}
+.post.dark h3,
+.post.dark p {
+  color: #fff;
+}
+footer {
+  background: var(--b);
+  color: var(--c);
+  padding: 2rem 5%;
+  text-align: center;
+  font-size: 0.9rem;
+}
+footer a {
+  color: var(--w);
+}
+@media (max-width: 800px) {
+  .split {
+    grid-template-columns: 1fr;
+  }
+  #burger {
+    display: block;
+  }
+  nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: var(--c);
+    padding: 1rem;
+    box-shadow: 0 6px 8px #0003;
+  }
+  nav.open {
+    display: flex;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
+
+/* Make photos and the video fill their boxes */
+.ph:has(img, iframe) {
+  position: relative;
+  padding: 0;
+}
+.ph:has(img, iframe) > span {
+  position: absolute;
+  inset: 0;
+}
+.ph img,
+.ph iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  object-fit: cover;
+}

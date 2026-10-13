@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Mini Brew",
+    "image": "assets/mini_brew.jpg",
+    "category": "Celebrations",
+    "tags": ["Celebrations", "Private Gatherings"],
+    "description": "Coffee catering concept for small gatherings.",
+    "price": 2500,
+    "guestRange": "10–20 guests",
+    "inclusions": ["coffee beverages", "cups", "basic serving setup"],
+    "availability": "Inquiry Required"
+  },
+  {
+    "id": 2,
+    "name": "Classic Brew",
+    "image": "assets/classic_brew.jpg",
+    "category": "School Events",
+    "tags": ["School Events", "Celebrations"],
+    "description": "Coffee catering concept for medium gatherings.",
+    "price": 4500,
+    "guestRange": "21–40 guests",
+    "inclusions": ["coffee and drink selection", "cups", "serving station"],
+    "availability": "Inquiry Required"
+  },
+  {
+    "id": 3,
+    "name": "Party Brew",
+    "image": "assets/party_brew.jpg",
+    "category": "Corporate Events",
+    "tags": ["Corporate Events", "Celebrations", "School Events"],
+    "description": "Coffee catering concept for larger gatherings.",
+    "price": 7500,
+    "guestRange": "41–70 guests",
+    "inclusions": ["wider drink menu", "cups", "proposed catering setup"],
+    "availability": "Inquiry Required"
+  },
+  {
+    "id": 4,
+    "name": "Custom Brew",
+    "image": "assets/custom_brew.jpg",
+    "category": "Private Gatherings",
+    "tags": ["Private Gatherings", "Corporate Events"],
+    "description": "Customizable sample catering concept for special requirements.",
+    "price": null,
+    "guestRange": "Based on inquiry",
+    "inclusions": ["tailored menu", "setup agreed through inquiry"],
+    "availability": "Inquiry Required"
+  }
+]

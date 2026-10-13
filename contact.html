@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact Us | BREW CAN DO</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Oswald:wght@500&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <div class="wrap split" style="align-items: start">
+          <form id="f" novalidate>
+            <h1>CONTACT US</h1>
+            <label for="name">Full Name</label
+            ><input id="name" name="name" autocomplete="name" required />
+            <div class="err" id="e-name"></div>
+            <label for="email">Email Address</label
+            ><input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              required
+            />
+            <div class="err" id="e-email"></div>
+            <label for="subject">Subject</label
+            ><input id="subject" name="subject" required />
+            <div class="err" id="e-subject"></div>
+            <label for="service">Service of Interest</label
+            ><select id="service" name="service" required>
+              <option value="">Select…</option>
+              <option>Mini Brew</option>
+              <option>Classic Brew</option>
+              <option>Party Brew</option>
+              <option>Custom Brew</option>
+            </select>
+            <div class="err" id="e-service"></div>
+            <label for="date">Event Date</label
+            ><input id="date" name="date" type="date" required />
+            <div class="err" id="e-date"></div>
+            <label for="message">Message</label
+            ><textarea id="message" name="message" rows="5" required></textarea>
+            <div class="err" id="e-message"></div>
+            <button class="btn" type="submit">Submit Inquiry</button>
+            <div id="out" role="status"></div>
+            <p class="note">
+              Demo form: validated in the browser only. No email is sent.
+            </p>
+          </form>
+          <div class="card">
+            <h3>Company Information</h3>
+            <p>
+              <strong>Business:</strong> BREW CAN DO<br /><strong
+                >Email:</strong
+              >
+              hello@brewcando.com<br /><strong>Telephone:09992399323</strong><br /><strong>Address:777 Malaya St, Freedom City</strong>
+            <br /><strong>Hours:8am to 10pm</strong>
+            </p>
+            <p>
+              <strong>Socials:Brew Can Do(on Facebook), Brew Can Do Official (on Instagram), Brew Can Do!(on Tiktok)</strong>
+              
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
